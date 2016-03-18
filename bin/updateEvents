@@ -3,9 +3,9 @@
 'use strict';
 
 
-const GetEvents = require('./index');
-const ResetType = require('./database-helpers/elasticsearch/reset-type');
-const IndexEvents = require('./database-helpers/elasticsearch/index-events');
+const GetEvents = require('../lib/index');
+const ResetType = require('../lib/database-helpers/elasticsearch/reset-type');
+const IndexEvents = require('../lib/database-helpers/elasticsearch/index-events');
 
 GetEvents(function(error, events) {
   console.log('get the events')
